@@ -16,3 +16,6 @@
 ## 再生 (Play)
 - HoloPlayCapture アクタをシーンへ追加する (Open project and add HoloPlayCapture actor to the scene)
 - PlayInHoloPlayWindow で再生 (Play with PlayInHoloPlayWindow)
+
+## アセット (Asset)
+- [Animation Starter Pack](https://www.unrealengine.com/marketplace/animation-starter-pack)

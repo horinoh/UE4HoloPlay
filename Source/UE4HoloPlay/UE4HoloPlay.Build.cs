@@ -8,7 +8,7 @@ public class UE4HoloPlay : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HoloPlayRuntime" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
