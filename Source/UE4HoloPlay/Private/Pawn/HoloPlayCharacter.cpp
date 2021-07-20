@@ -78,7 +78,7 @@ void AHoloPlayCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//!< シーンにある AHoloPlayCapture アクタを探す (アクタは予めシーンに置いておくこと)
+	//!< シーンにある AHoloPlayCapture アクタを探す、アクタは予めシーンに置いておくこと (Finding AHoloPlayCapture actor in the scene, AHoloPlayCapture actor must be placed in advance)
 	if (nullptr == HoloPlayCapture) 
 	{
 		TArray<AActor*> Actors;
@@ -93,7 +93,7 @@ void AHoloPlayCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 
-	//!< AHoloPlayCapture のトランスフォームをカメラのトランスフォームに合わせる
+	//!< カメラのトランスフォームを AHoloPlayCapture トランスフォームへ適用する (Apply camera's transform to AHoloPlayCapture's transform)
 	if (nullptr != HoloPlayCapture)
 	{
 		HoloPlayCapture->SetActorTransform(CameraComp->GetComponentTransform());
